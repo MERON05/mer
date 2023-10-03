@@ -5,6 +5,24 @@
   <style>
     /* Global styles and other CSS styles... */
 
+    /* Banner styles */
+    .banner {
+      background-image: url("banner.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+
+    .banner h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+    }
+
     /* Slideshow styles */
     .slideshow-container {
       position: relative;
@@ -32,19 +50,42 @@
       color: #666;
     }
 
-    /* Slideshow navigation styles */
-    .dot {
-      height: 10px;
-      width: 10px;
-      margin: 0 4px;
-      background-color: #bbb;
-      border-radius: 50%;
-      display: inline-block;
-      transition: background-color 0.6s ease;
+    /* Testimonials styles */
+    .testimonials {
+      background-color: #f9f9f9;
+      padding: 40px 0;
     }
 
-    .active-dot {
-      background-color: #717171;
+    .testimonial-slide {
+      display: none;
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .testimonial-slide img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 20px;
+    }
+
+    .testimonial-slide h3 {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    .testimonial-slide p {
+      color: #666;
+      font-style: italic;
+    }
+
+    /* Box styles */
+    .box {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
     }
   </style>
 </head>
@@ -62,26 +103,39 @@
   </header>
 
   <main>
+    <section class="banner">
+      <div>
+        <h2>Special Offer!</h2>
+        <p>Get 10% off on all services this month</p>
+      </div>
+    </section>
+
     <section class="services">
       <h2>Our Services</h2>
 
       <div class="slideshow-container">
         <div class="service-slide">
-          <img src="service1.jpg" alt="Service 1">
-          <h3>Service 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="box">
+            <img src="service1.jpg" alt="Service 1">
+            <h3>Service 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
         </div>
 
         <div class="service-slide">
-          <img src="service2.jpg" alt="Service 2">
-          <h3>Service 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="box">
+            <img src="service2.jpg" alt="Service 2">
+            <h3>Service 2</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
         </div>
 
         <div class="service-slide">
-          <img src="service3.jpg" alt="Service 3">
-          <h3>Service 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <div class="box">
+            <img src="service3.jpg" alt="Service 3">
+            <h3>Service 3</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
         </div>
 
         <!-- Add more service slides as needed -->
@@ -93,6 +147,65 @@
           <span class="dot"></span>
           <!-- Add more dots corresponding to the number of service slides -->
         </div>
+      </div>
+    </section>
+
+    <section class="about-us">
+      <h2>About Us</h2>
+      <div class="box">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat diam. Maecenas auctor, arcu a dictum pulvinar, nulla nunc tincidunt urna, vel feugiat augue purus eu arcu. Sed sit amet suscipit turpis. Fusce ut condimentum orci. Sed ac blandit diam, id condimentum erat.Continuing from the previous response...
+
+```html
+        Integer lobortis orci eu metus sodales, quis efficitur nulla consequat. Sed dignissim mi id est aliquet, a aliquam nisl consequat. Sed orci mi, lacinia at malesuada a, ullamcorper a lorem. Nulla lobortis bibendum tellus, nec tempus lectus rhoncus id. Fusce consectetur tellus velit, at iaculis mauris malesuada vel.</p>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <h2>Testimonials</h2>
+
+      <div class="slideshow-container">
+        <div class="testimonial-slide">
+          <div class="box">
+            <img src="testimonial1.jpg" alt="Testimonial 1">
+            <h3>John Doe</h3>
+            <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel volutpat diam. Maecenas auctor, arcu a dictum pulvinar, nulla nunc tincidunt urna, vel feugiat augue purus eu arcu."</p>
+          </div>
+        </div>
+
+        <div class="testimonial-slide">
+          <div class="box">
+            <img src="testimonial2.jpg" alt="Testimonial 2">
+            <h3>Jane Smith</h3>
+            <p>"Sed sit amet suscipit turpis. Fusce ut condimentum orci. Sed ac blandit diam, id condimentum erat. Integer lobortis orci eu metus sodales, quis efficitur nulla consequat."</p>
+          </div>
+        </div>
+
+        <div class="testimonial-slide">
+          <div class="box">
+            <img src="testimonial3.jpg" alt="Testimonial 3">
+            <h3>David Johnson</h3>
+            <p>"Nulla lobortis bibendum tellus, nec tempus lectus rhoncus id. Fusce consectetur tellus velit, at iaculis mauris malesuada vel."</p>
+          </div>
+        </div>
+
+        <!-- Add more testimonial slides as needed -->
+
+        <!-- Slideshow navigation dots -->
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <!-- Add more dots corresponding to the number of testimonial slides -->
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <div class="box">
+        <p>Email: info@example.com</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Address: 123 Main Street, City, Country</p>
       </div>
     </section>
 
@@ -108,9 +221,13 @@
     function showSlides() {
       var i;
       var slides = document.getElementsByClassName("service-slide");
+      var testimonialSlides = document.getElementsByClassName("testimonial-slide");
       var dots = document.getElementsByClassName("dot");
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
+      }
+      for (i = 0; i < testimonialSlides.length; i++) {
+        testimonialSlides[i].style.display = "none";
       }
       slideIndex++;
       if (slideIndex > slides.length) {
@@ -120,6 +237,7 @@
         dots[i].className = dots[i].className.replace(" active-dot", "");
       }
       slides[slideIndex - 1].style.display = "block";
+      testimonialSlides[slideIndex - 1].style.display = "block";
       dots[slideIndex - 1].className += " active-dot";
       setTimeout(showSlides, 3000); // Change slide every 3 seconds
     }
