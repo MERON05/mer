@@ -1,0 +1,63 @@
+/* CSS styles for the shopping home page */
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main content styles */
+.services {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service {
+  flex: 1 0 300px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.service img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.service h3 {
+  margin-top: 10px;
+}
+
+/* Footer styles */
+footer {
+  background-color: #333;
+  padding: 10px;
+  color: #fff;
+  text-align: center;
+}
