@@ -1,201 +1,114 @@
-<!DOCTYPE html>
-<html>
+import React from 'react'
 
-<head>
-  <title>Shoe Shining Company</title>
-  <style>
-    /* CSS styling for the app */
-    body {
-      font-family: Arial, sans-serif;
-      margin: -10;
-      padding: -10;
-      background-color: #fffffff;
-    }
+import styles from './home.module.css'
 
-    .container {
-      max-width: 800px;
-      margin: 0 auto;
-      padding: 20px;
-      background-color: #ffffff;
-      border-radius: 10px;
-      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    h1 {
-      text-align: center;
-      color: #333333;
-    }
-
-    h2 {
-      color: #333333;
-    }
-
-    p {
-      color: #555555;
-    }
-
-    .service-list {
-      margin-bottom: 20px;
-    }
-
-    .service-list ul {
-      list-style-type: disc;
-      margin-left: 30px;
-    }
-
-    .contact-info {
-      margin-bottom: 20px;
-    }
-
-    .testimonies {
-      margin-bottom: 20px;
-    }
-
-    .price-list {
-      margin-bottom: 20px;
-    }
-
-    .price-list table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    .price-list th,
-    .price-list td {
-      padding: 15px;
-      text-align: center;
-      border: 1px solid #e2e6ea;
-    }
-
-    .price-list th {
-      background-color: #f9fafb;
-      color: #333333;
-    }
-
-    .price-list td {
-      background-color: #ffffff;
-      color: #555555;
-    }
-
-    .contact-info p {
-      margin-bottom: 5px;
-    }
-
-    .contact-info .phone {
-      color: #337ab7;
-    }
-
-    .contact-info .email {
-      color: #337ab7;
-      text-decoration: none;
-    }
-
-    .testimony {
-      margin-bottom: 20px;
-      border: 1px solid #e2e6ea;
-      border-radius: 10px;
-      padding: 15px;
-      background-color: #f9fafb;
-    }
-
-    .testimony p {
-      margin-bottom: 5px;
-    }
-
-    .testimony .author {
-      font-weight: bold;
-      color: #333333;
-    }
-
-    .image-container {
-      display: flex;
-      justify-content: center;
-      margin-bottom: 20px;
-    }
-
-    .image-container img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="container">
-    <h1>Shoe Shining Company</h1>
-
-    <div class="image-container">
-      <img src="shoe_shining_image.jpg" alt="Shoe Shining Image">
-    </div>
-
-    <div class="service-list">
-      <h2>Our Services:</h2>
-      <ul>
-        <li>Shoe Polishing</li>
-        <li>Deep Cleaning</li>
-        <li>Leather Conditioning</li>
-        <li>Scuff Removal</li>
-        <li>Laces Replacement</li>
-      </ul>
-    </div>
-
-    <div class="contact-info">
-      <h2>Contact Us:</h2>
-      <p>Phone: <span class="phone">123-456-7890</span></p>
-      <p>Email: <a href="mailto:info@shoeshining.com" class="email">info@shoeshining.com</a></p>
-    </div>
-
-    <div class="testimonies">
-      <h2>Testimonials:</h2>
-
-      <div class="testimony">
-        <p>"I've never seen my shoes shine so brightly! Amazing service!"</p>
-        <p class="author">- John Doe</p>
-      </div>
-
-      <div class="testimony">
-        <p>"Quick and professional shoe cleaning. Highly recommended!"</p>
-        <p class="author">- Jane Smith</p>
+const Home = (props) => {
+  return (
+    <div className={styles['container']}>
+      <div className={styles['android-large1']}>
+        <div className={styles['frame1']}></div>
+        <img
+          alt="Rectangle3619"
+          src="/rectangle3619-ixgj-200h.png"
+          className={styles['rectangle3']}
+        />
+        <img
+          alt="Rectangle235"
+          src="/rectangle235-d7gp-200h.png"
+          className={styles['rectangle2']}
+        />
+        <span className={styles['text']}>
+          <span>Text</span>
+        </span>
+        <span className={styles['text02']}>
+          <span>Text text</span>
+        </span>
+        <img
+          alt="Ellipse1610"
+          src="/ellipse1610-oi2q.svg"
+          className={styles['ellipse1']}
+        />
+        <span className={styles['text04']}>
+          <span className={styles['text05']}>Text</span>
+          <br className={styles['text06']}></br>
+          <br className={styles['text07']}></br>
+          <span className={styles['text08']}>
+            <span
+              dangerouslySetInnerHTML={{
+                __html: ' ',
+              }}
+            />
+          </span>
+          <span>Size</span>
+        </span>
+        <img
+          alt="Rectangle4620"
+          src="/rectangle4620-z7mx6-200w.png"
+          className={styles['rectangle4']}
+        />
+        <img
+          alt="Rectangle5621"
+          src="/rectangle5621-ixb9-200w.png"
+          className={styles['rectangle5']}
+        />
+        <img
+          alt="Rectangle6622"
+          src="/rectangle6622-mb89-200w.png"
+          className={styles['rectangle6']}
+        />
+        <img
+          alt="Rectangle7623"
+          src="/rectangle7623-cp7j-200w.png"
+          className={styles['rectangle7']}
+        />
+        <img
+          alt="Rectangle8624"
+          src="/rectangle8624-wcrn-200w.png"
+          className={styles['rectangle8']}
+        />
+        <img
+          alt="Rectangle9625"
+          src="/rectangle9625-8pp-200w.png"
+          className={styles['rectangle9']}
+        />
+        <span className={styles['text10']}>
+          <span>Text</span>
+        </span>
+        <span className={styles['text12']}>
+          <span>Text</span>
+        </span>
+        <span className={styles['text14']}>
+          <span>Text</span>
+        </span>
+        <span className={styles['text16']}>
+          <span>Text</span>
+        </span>
+        <span className={styles['text18']}>
+          <span>Text</span>
+        </span>
+        <span className={styles['text20']}>
+          <span>Text</span>
+        </span>
+        <img alt="new1736" src="/new1736-c7q.svg" className={styles['new1']} />
+        <img alt="new2739" src="/new2739-xmgs.svg" className={styles['new2']} />
+        <img alt="new3740" src="/new3740-blxd.svg" className={styles['new3']} />
+        <img alt="new5742" src="/new5742-5r9a.svg" className={styles['new5']} />
+        <img alt="new4741" src="/new4741-rs6.svg" className={styles['new4']} />
+        <img alt="new6743" src="/new6743-387l.svg" className={styles['new6']} />
+        <img alt="new7744" src="/new7744-kk7s.svg" className={styles['new7']} />
+        <img alt="new8745" src="/new8745-748.svg" className={styles['new8']} />
+        <span className={styles['text22']}>
+          <span>text text text</span>
+        </span>
+        <span className={styles['text24']}>
+          <span>text text text</span>
+        </span>
+        <span className={styles['text26']}>
+          <span>text text text</span>
+        </span>
       </div>
     </div>
+  )
+}
 
-    <div class="price-list">
-      <h2>Price List:</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Service</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Shoe Polishing</td>
-            <td>$10</td>
-          </tr>
-          <tr>
-            <td>Deep Cleaning</td>
-            <tdApologies for the incomplete response. Here's the remaining HTML code:
-
-```html
-            <td>$15</td>
-          </tr>
-          <tr>
-            <td>Leather Conditioning</td>
-            <td>$12</td>
-          </tr>
-          <tr>
-            <td>Scuff Removal</td>
-            <td>$8</td>
-          </tr>
-          <tr>
-            <td>Laces Replacement</td>
-            <td>$5</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</body>
-
-</html>
+export default Home
