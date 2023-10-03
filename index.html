@@ -9,7 +9,7 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f2f2f2;
+      background-color: #f7f9fc;
     }
 
     .container {
@@ -17,8 +17,8 @@
       margin: 0 auto;
       padding: 20px;
       background-color: #ffffff;
-      border: 1px solid #cccccc;
-      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
@@ -40,7 +40,7 @@
 
     .service-list ul {
       list-style-type: disc;
-      margin-left: 20px;
+      margin-left: 30px;
     }
 
     .contact-info {
@@ -62,13 +62,13 @@
 
     .price-list th,
     .price-list td {
-      padding: 10px;
+      padding: 15px;
       text-align: center;
-      border: 1px solid #cccccc;
+      border: 1px solid #e2e6ea;
     }
 
     .price-list th {
-      background-color: #f2f2f2;
+      background-color: #f9fafb;
       color: #333333;
     }
 
@@ -91,10 +91,11 @@
     }
 
     .testimony {
-      margin-bottom: 10px;
-      border: 1px solid #cccccc;
-      padding: 10px;
-      background-color: #f2f2f2;
+      margin-bottom: 20px;
+      border: 1px solid #e2e6ea;
+      border-radius: 10px;
+      padding: 15px;
+      background-color: #f9fafb;
     }
 
     .testimony p {
@@ -105,12 +106,27 @@
       font-weight: bold;
       color: #333333;
     }
+    
+    .image-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <h1>Shoe Shining Company</h1>
+
+    <div class="image-container">
+      <img src="shoe_shining_image.jpg" alt="Shoe Shining Image">
+    </div>
 
     <div class="service-list">
       <h2>Our Services:</h2>
@@ -158,25 +174,4 @@
             <td>$10</td>
           </tr>
           <tr>
-            <td>Deep Cleaning</td>
-            <td>$15</td>
-          </tr>
-          <tr>
-            <td>Leather Conditioning</td>
-            <td>$8</td>
-          </tr>
-          <tr>
-            <td>Scuff Removal</td>
-            <td>$5</td>
-         </tr>
-          <tr>
-            <td>Laces Replacement</td>
-            <td>$3</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</body>
-
-</html>
+          
