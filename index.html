@@ -2,95 +2,180 @@
 <html>
 
 <head>
-  <title>Laundry Service App</title>
+  <title>Shoe Shining Company</title>
   <style>
     /* CSS styling for the app */
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f2f2f2;
     }
 
     .container {
       max-width: 800px;
       margin: 0 auto;
       padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     h1 {
       text-align: center;
+      color: #333333;
     }
 
-    form {
+    h2 {
+      color: #333333;
+    }
+
+    p {
+      color: #555555;
+    }
+
+    .service-list {
       margin-bottom: 20px;
     }
 
-    label {
-      display: block;
-      margin-bottom: 10px;
+    .service-list ul {
+      list-style-type: disc;
+      margin-left: 20px;
     }
 
-    input[type="text"],
-    input[type="email"],
-    input[type="tel"] {
+    .contact-info {
+      margin-bottom: 20px;
+    }
+
+    .testimonies {
+      margin-bottom: 20px;
+    }
+
+    .price-list {
+      margin-bottom: 20px;
+    }
+
+    .price-list table {
       width: 100%;
+      border-collapse: collapse;
+    }
+
+    .price-list th,
+    .price-list td {
       padding: 10px;
-      margin-bottom: 10px;
+      text-align: center;
+      border: 1px solid #cccccc;
     }
 
-    select {
-      width: 100%;
+    .price-list th {
+      background-color: #f2f2f2;
+      color: #333333;
+    }
+
+    .price-list td {
+      background-color: #ffffff;
+      color: #555555;
+    }
+
+    .contact-info p {
+      margin-bottom: 5px;
+    }
+
+    .contact-info .phone {
+      color: #337ab7;
+    }
+
+    .contact-info .email {
+      color: #337ab7;
+      text-decoration: none;
+    }
+
+    .testimony {
+      margin-bottom: 10px;
+      border: 1px solid #cccccc;
       padding: 10px;
-      margin-bottom: 10px;
+      background-color: #f2f2f2;
     }
 
-    textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
+    .testimony p {
+      margin-bottom: 5px;
     }
 
-    button {
-      padding: 10px 20px;
-      background-color: #4CAF50;
-      color: white;
-      border: none;
-      cursor: pointer;
-    }
-
-    button:hover {
-      background-color: #45a049;
+    .testimony .author {
+      font-weight: bold;
+      color: #333333;
     }
   </style>
 </head>
 
 <body>
   <div class="container">
-    <h1>Laundry Service App</h1>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
+    <h1>Shoe Shining Company</h1>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
+    <div class="service-list">
+      <h2>Our Services:</h2>
+      <ul>
+        <li>Shoe Polishing</li>
+        <li>Deep Cleaning</li>
+        <li>Leather Conditioning</li>
+        <li>Scuff Removal</li>
+        <li>Laces Replacement</li>
+      </ul>
+    </div>
 
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" name="phone" required>
+    <div class="contact-info">
+      <h2>Contact Us:</h2>
+      <p>Phone: <span class="phone">123-456-7890</span></p>
+      <p>Email: <a href="mailto:info@shoeshining.com" class="email">info@shoeshining.com</a></p>
+    </div>
 
-      <label for="service">Service:</label>
-      <select id="service" name="service" required>
-        <option value="">Select a service</option>
-        <option value="washing">Washing</option>
-        <option value="drying">Drying</option>
-        <option value="ironing">Ironing</option>
-        <option value="folding">Folding</option>
-      </select>
+    <div class="testimonies">
+      <h2>Testimonials:</h2>
 
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="4"></textarea>
+      <div class="testimony">
+        <p>"I've never seen my shoes shine so brightly! Amazing service!"</p>
+        <p class="author">- John Doe</p>
+      </div>
 
-      <button type="submit">Submit</button>
-    </form>
+      <div class="testimony">
+        <p>"Quick and professional shoe cleaning. Highly recommended!"</p>
+        <p class="author">- Jane Smith</p>
+      </div>
+    </div>
+
+    <div class="price-list">
+      <h2>Price List:</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Shoe Polishing</td>
+            <td>$10</td>
+          </tr>
+          <tr>
+            <td>Deep Cleaning</td>
+            <td>$15</td>
+          </tr>
+          <tr>
+            <td>Leather Conditioning</td>
+            <td>$8</td>
+          </tr>
+          <tr>
+            <td>Scuff Removal</td>
+            <td>$5</td>
+         </tr>
+          <tr>
+            <td>Laces Replacement</td>
+            <td>$3</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </body>
 
