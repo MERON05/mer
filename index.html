@@ -3,33 +3,64 @@
 <head>
   <title>X Shoeshiners - Addis Ababa</title>
   <style>
-    .watermark {
-      position: absolute;
-      top: 50px;
-      right: 50px;
-      opacity: 0.5;
+    .title {
+      background-color: blue;
+      color: goldenrod;
+      font-weight: bold;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .services {
+      background-color: goldenrod;
+      color: blue;
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .description {
+      color: blue;
+      text-align: center;
+    }
+    
+    .logo {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+    }
+    
+    .contact {
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <h1>X Shoeshiners</h1>
+  <div class="title">
+    <h1>X Shoeshiners</h1>
+    <p>Located in Addis Ababa, Ethiopia</p>
+  </div>
   
-  <!-- Your image -->
-  <img src="https://github.com/MERON05/mer/blob/main/Black-Shoes-With-Care-Accessories.jpg" class="watermark" alt="Shoe Clip Art Watermark">
+  <div class="logo">
+    <img src="shoe_logo.png" alt="Shoe Logo" style="filter: grayscale(100%);">
+  </div>
   
-  <!-- Rest of your HTML content -->
-  <h2>Services and Prices:</h2>
-  <ul>
-    <li>Deep Cleaning: 100 birr per pair (includes pick up and delivery)</li>
-    <li>Polish: 75 birr per pair (includes pick up and delivery)</li>
-  </ul>
+  <div class="services">
+    <h2>Services and Prices:</h2>
+    <ul>
+      <li>Deep Cleaning: 100 birr per pair (includes pick up and delivery)</li>
+      <li>Polish: 75 birr per pair (includes pick up and delivery)</li>
+    </ul>
+  </div>
   
-  <h2>Testimonials:</h2>
-  <p>"The service at X Shoeshiners is exceptional. My shoes have never looked better!" - John Doe</p>
-  <p>"I highly recommend X Shoeshiners. Their attention to detail is impressive." - Jane Smith</p>
+  <div class="description">
+    <h2>Testimonials:</h2>
+    <p>"The service at X Shoeshiners is exceptional. My shoes have never looked better!" - John Doe</p>
+    <p>"I highly recommend X Shoeshiners. Their attention to detail is impressive." - Jane Smith</p>
+  </div>
   
-  <h2>Contact Us:</h2>
-  <p>Call us at: 0925077190</p>
-  
+  <div class="contact">
+    <h2>Contact Us:</h2>
+    <p>Call us at: 0925077190</p>
+  </div>
 </body>
 </html>
