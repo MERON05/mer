@@ -3,64 +3,48 @@
 <head>
   <title>X Shoeshiners - Addis Ababa</title>
   <style>
-    .title {
-      background-color: blue;
-      color: goldenrod;
-      font-weight: bold;
-      padding: 10px;
-      text-align: center;
+    body {
+      position: relative;
     }
     
-    .services {
-      background-color: goldenrod;
-      color: blue;
-      padding: 10px;
-      text-align: center;
+    .vertical-line {
+      position: absolute;
+      top: 0;
+      right: calc(20cm - 1px); /* Subtracting 1px to account for line thickness */
+      width: 2px;
+      height: 100%;
+      background-color: black;
     }
     
-    .description {
-      color: blue;
-      text-align: center;
-    }
-    
-    .logo {
-      display: block;
-      margin: 0 auto;
-      width: 200px;
-    }
-    
-    .contact {
-      text-align: center;
+    .horizontal-line {
+      position: absolute;
+      bottom: calc(20cm - 1px); /* Subtracting 1px to account for line thickness */
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: black;
     }
   </style>
 </head>
 <body>
-  <div class="title">
-    <h1>X Shoeshiners</h1>
-    <p>Located in Addis Ababa, Ethiopia</p>
+  <div class="vertical-line"></div>
+  <div class="horizontal-line"></div>
+  
+  <!-- Rest of your website content goes here -->
+  <div style="position: absolute; top: 0; right: 0;">
+    <!-- Right section of the website -->
   </div>
   
-  <div class="logo">
-    <img src="shoe_logo.png" alt="Shoe Logo" style="filter: grayscale(100%);">
+  <div style="position: absolute; bottom: 0; left: 0;">
+    <!-- Bottom section of the website -->
   </div>
   
-  <div class="services">
-    <h2>Services and Prices:</h2>
-    <ul>
-      <li>Deep Cleaning: 100 birr per pair (includes pick up and delivery)</li>
-      <li>Polish: 75 birr per pair (includes pick up and delivery)</li>
-    </ul>
+  <div style="position: absolute; top: 0; left: 0;">
+    <!-- Top-left section of the website -->
   </div>
   
-  <div class="description">
-    <h2>Testimonials:</h2>
-    <p>"The service at X Shoeshiners is exceptional. My shoes have never looked better!" - John Doe</p>
-    <p>"I highly recommend X Shoeshiners. Their attention to detail is impressive." - Jane Smith</p>
-  </div>
-  
-  <div class="contact">
-    <h2>Contact Us:</h2>
-    <p>Call us at: 0925077190</p>
+  <div style="position: absolute; top: 0; right: 0;">
+    <!-- Top-right section of the website -->
   </div>
 </body>
 </html>
